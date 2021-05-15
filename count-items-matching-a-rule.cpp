@@ -21,21 +21,13 @@ public:
             jth = 2;
         }
 
-        for (int i = 0; i < items[0].size(); i++)
+        for (int i = 0; i < items.size(); i++)
         {
-            for (int j = 0; j < items.size(); j++)
+            if (items[i][jth].compare(ruleValue) == 0)
             {
-                if (items[i][j].compare(ruleValue) == 0)
-                {
-                    if (j == jth)
-                    {
-                        result++;
-                    }
-                }
+                result++;
             }
         }
         return result;
     }
 };
-
-//runtime error
