@@ -1,0 +1,4 @@
+# contain duplicate
+```
+use hashmap
+```
